@@ -1,1 +1,3 @@
-
+.body{
+     background: linear-gradient(to bottom, grey , black); /* Standard syntax (must be last) */
+}
