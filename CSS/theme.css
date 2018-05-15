@@ -1,3 +1,5 @@
-.body{
-     background: linear-gradient(to bottom, grey , black); /* Standard syntax (must be last) */
+body {
+    height: 100%;
+    margin: 0;
+    background: linear-gradient(to bottom, grey , black);
 }
