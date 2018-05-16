@@ -39,10 +39,25 @@ header {
   padding: 50px;
 }
 
-.zoom{
+.zoom, .zoomImg{
   transition: transform .2s;
 }
-
 .zoom:hover{
-  transform: scale(1.02)
+  transform: scale(1.02);
+}
+.zoomImg:hover{
+  transform: scale(1.25);
+}
+
+.flex_squares{
+  display: flex;
+  flex-wrap: nowrap;
+
+  justify-content: space-around;
+}
+.flex_squares > div{
+  width: 20%;
+  text-align: center;
+  line-height: 50px;
+  padding: 25px;
 }
