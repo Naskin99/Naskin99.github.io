@@ -9,23 +9,64 @@
         
         <header>
            <a href="index.html"><img id="header_logo" src="images/logo.png" class="zoomImg"></a>
+           <div class="tab">
+            <button onclick="openCity(event, 'About')" id="AboutOpen">About</button>
+            <button onclick="openCity(event, 'Services')">Services</button>
+            <button onclick="openCity(event, 'Contact')">Contact</button>
+          </div>
+          
         </header>
 
         <div id="body_container">
-            <div id="body" class="zoom">
-                Browns Painting & Decorating offer all aspects of domestic and commercial, interior and exterior Painting & 
-                Decorating. Covering North East South & West Yorkshire and all the surrounding areas, I am fully insured; 
-                All paints used are waterbase (low voc) on interior decorating. Low VOC paints are not only better for you 
-                and your family's health but also the environment. 99% of the paints that I use are from Dulux Trade centres. 
-                They are of the highest quality possible. Browns Painting & Decorating offer a friendly, reliable and professional 
-                service for domestic and commercial properties. We carry out all aspects of interior & exterior painting and 
-                decorating. We are proud to offer top quality work at realistic prices no matter how big or small the job is.
+            <div style="text-align: center">
+                
+                <div id="About" class="tabcontent">
+                    <h3>About</h3>
+                    <div id="body" class="zoom">
+                        Browns Painting & Decorating offer all aspects of domestic and commercial, interior and exterior Painting & 
+                        Decorating. Covering North East South & West Yorkshire and all the surrounding areas, I am fully insured; 
+                        All paints used are waterbase (low voc) on interior decorating. Low VOC paints are not only better for you 
+                        and your family's health but also the environment. 99% of the paints that I use are from Dulux Trade centres. 
+                        They are of the highest quality possible. Browns Painting & Decorating offer a friendly, reliable and professional 
+                        service for domestic and commercial properties. We carry out all aspects of interior & exterior painting and 
+                        decorating. We are proud to offer top quality work at realistic prices no matter how big or small the job is.
+                    </div>
+                </div>
+                  
+                <div id="Services" class="tabcontent">
+                    <h3>Services</h3>
+                    <p>This will show what we offer.</p> 
+                    <div class="flex_squares">
+                        <div class="zoomImg"><img src="images/placeholderA.jpg" width="60%"></div>
+                        <div class="zoomImg"><img src="images/placeholderB.jpg" width="60%"></div>
+                    </div>
+                </div>
+                  
+                <div id="Contact" class="tabcontent">
+                    <h3>Contact</h3>
+                    <p>This will hold a mailto link and genreal information.</p>
+                </div>
             </div>
-            <div class="flex_squares">
-                <div class="zoomImg"><img src="images/placeholderA.jpg" width="60%"></div>
-                <div class="zoomImg"><img src="images/placeholderB.jpg" width="60%"></div>
-            </div>
+
         </div>
         
     </body>
+    <script>
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+                document.getElementById(cityName).style.display = "block";
+                evt.currentTarget.className += " active";
+            }
+            
+            // Get the element with id="defaultOpen" and click on it
+            document.getElementById("AboutOpen").click();
+    </script>
 </html>
