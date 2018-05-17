@@ -119,3 +119,11 @@ header {
   height: 500px;
   background-color: grey;
 }
+
+.hover_div {
+  display: none;
+}
+
+.img_hover:hover + div {
+  display: block;
+}
