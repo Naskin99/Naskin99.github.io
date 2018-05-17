@@ -121,10 +121,24 @@ header {
   background-color: grey;
 }
 
-.hover_div {
-  display: none;
-}
+#wrapperLeft .text {
+  position:relative;
+  bottom:50%;
+  left:100%;
+  visibility:hidden;
+  }
+  
+  #wrapperLeft:hover .text {
+  visibility:visible;
+  }
 
-.img_hover:hover + div {
-  display: block;
-}
+  #wrapperRight .text {
+    position:relative;
+    bottom:50%;
+    right:100%;
+    visibility:hidden;
+    }
+    
+    #wrapperRight:hover .text {
+    visibility:visible;
+    }
