@@ -57,13 +57,14 @@ header {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-around;
+  image-orientation: from-image;
 }
 .flex_squares > div{
   width: 20%;
   text-align: center;
   line-height: 50px;
   padding: 25px;
-}
+  }
 
 .tab {
   overflow: hidden;
