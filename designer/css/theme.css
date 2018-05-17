@@ -30,11 +30,10 @@ header {
 }
 
 #body_container{
-  opacity: 0.9;
   width: 80%;
   margin-left: 10%;
   margin-right: 10%;
-  background: #111;
+  background-color: rgba(17,17,17,0.95);
   font-family: 'Arimo';
   color: antiquewhite;
 }
