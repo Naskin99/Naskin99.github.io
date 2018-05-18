@@ -153,3 +153,8 @@ footer {
   visibility:visible;
   font-size: 15px;
 }
+
+#email_form{
+  display: flex;
+  justify-content: center;
+}
