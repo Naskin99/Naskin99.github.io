@@ -1,154 +1,210 @@
 <html>
-    <head>
-        <title>Designer Web Page Prototype</title>
-        <link rel="stylesheet" type="text/css" href="css/theme.css">
-        <link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet"> 
-        <script src="scripts/main.js"></script>
-    </head>
-    <body>
-        
-        <header>
-           <a href="index.html"><img id="header_logo" src="images/logo.png" class="zoomImg"></a>
-        </header>
-
-        <div id="body_container">
-            <p>
-            <div class="tab">
-                <button onclick="openTab(event, 'About')" id="AboutOpen">About</button>
-                <button onclick="openTab(event, 'Services')">Services</button>
-                <button onclick="openTab(event, 'Contact')">Contact</button>
-                <button onclick="openTab(event, 'Testimonials')">Testimonials</button>
-            </div>
-            </p>
-        </div>
-
-        <div id="body_container" style="height: 100%;">
-            <div style="text-align: center">
-                <div id="About" class="tabcontent">
-                    <h1>About</h1>
-                    <div id="body">    
-                        <p>
-                            Here at Browns Painting & Decorating, we offer all aspects of domestic and commercial, interior and exterior Painting and 
-                            Decorating to suit your needs. We are proud to offer top quality work at realistic prices no matter how big or small the job is.
-                        </p>
-                        <p>
-                            We are fully insured; All paints used are waterbase (low voc) on interior decorating. Low VOC paints are not only better 
-                            for you and your family's health but also the environment. The vast majority of the paints that we use are from 
-                            trusted Dulux Trade centres, so we can auure all clients that they are of the highest quality possible.  
-                        </p>
-                        <p>
-                                We are proud to cover North, East, South and West Yorkshire, as well as surrounding areas.
-                            </p>
-                    </div>
-
-                    <div class="body">
-                        
-                        <div id="map"></div>
-                        <script src="scripts/main.js">
-                            initMap()
-                        </script>
-                        <script async defer
-                            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARhoLCYUcUR49ToPsIUYua_8Q2tpCCsmU&callback=initMap">
-                        </script>
-                    </div>
-
-                </div>
-                  
-                <div id="Services" class="tabcontent">
-                    <h1 class="zoom">Services</h1>
-                    <div id="body">
-                        Browns Painting & Decorating offer many services for both domestic and commercial clients. We specialise in providing
-                        great quality painting and decorating services to meet all of your needs. Please feel free to contact us in regards
-                        to our work with any question you may have. Below is a collection of our work as we feel it speaks for itself!
-                    </div>
-
-                    <div class="flex_squares">
-                        <div id="wrapperLeft">
-                            <img src="images/externalA.png" class="hover" width="80%"/>
-                            <p class="text" style="line-height: 100%">
-                                We offer top quality exterior paint and decoration work! We have done jobs for countless clients, 
-                                all of which have been satisfied with our work.
-                            </p>
-                        </div>
-                        <div id="wrapperRight">
-                            <img src="images/internalA.png" width="80%">
-                            <p class="text" style="line-height: 100%">
-                                We offer top quality interior paint and decoration work! We have done jobs for countless clients, 
-                                all of which have been satisfied with our work.
-                            </p>
-                        </div>
-                    </div>
-
-
-                </div>
-                  
-                <div id="Contact" class="tabcontent">
-                    <h1>Contact</h1>
-                    <div id="body">
-                        
-                        <p>
-                            Calling us directly and Emails are the best ways to get in touch with us, we do have a facebook 
-                            page <a href="https://www.facebook.com/Browns-Decorating-433985203431894/">Here</a> which you 
-                            can use to get in touch as well!
-                        </p>
-                        <p class="zoom">
-                            T- 01977 672382
-                        </p>
-                        <p class="zoom">
-                            M- 07917 004361
-                        </p>
-                        <p class="zoom">
-                            <a href="mailto:brownsdecorating@btinternet.com">E- brownsdecorating@btinternet.com</a>
-                        </p>
-                        <p> 
-                            Please feel free to get in touch to make appointments, we're open all week normal business
-                            hours!
-                        </p>
-                        
-                    </div>
-                    <div id="email_form" style="font-family: monospace">
-                            <form action="" method="POST" enctype="multipart/form-data">
-                                <input type="hidden" name="action" value="submit">
-                                Your name:&nbsp;
-                                <input name="name" type="text" value="" size="30"/><br>
-                                Your email:
-                                <input name="email" type="text" value="" size="30"/><br>
-                                <br></br>
-                                Your message:<br>
-                                <textarea name="message" rows="7" cols="30" style="resize: none;"></textarea><br>
-                                <input type="submit" value="Send email"/>
-                            </form>
-                    </div>
-                </div>
-
-                <div id="Testimonials" class="tabcontent">
-                        <h1>Testimonials</h1>
-                        
-                        <div id="body">
-                            <p>
-                                "Just had full house painted. It looks amazing. Very friendly, trustworthy and reliable. The place is immaculate, 
-                                no mess or cleaning up to do. All prep work done prior to painting. Work done to a very high standard. Would 
-                                definitely recommend Browns and would use again. Thankyou Keith for an amazing result."
-                            </p>
-                            <p>
-                                "Fantastic job and would 110% recommend. Quick, reliable and did an amazing job on the entire house."
-                            </p>
-                            <p>
-                                "Superb!! Couldn't be more helpful. Price for quality of job excellent. Highly recommended."
-                            </p>
-                        </div>
-                         
-                    </div>
-            </div>
-
-        </div>
-
-        <footer style="line-height: 1px;">
-            <p class="zoom">E- <a href="mailto:brownsdecorating@btinternet.com">brownsdecorating@btinternet.com</a></p>
-            <p class="zoom">M- 07917 004361  T- 01977 672382</p>
-        </footer>
-
-    </body>
-
     
+    <head>
+        <link type="text/css" rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700" rel="stylesheet">
+    </head>
+    
+    <body>
+        <header>
+            <img id="logo" src="img/logo.png">
+        </header>
+        
+        <nav>
+            <div id="about-link" class="nav-item">About Us</div>
+            <div id="portfolio-link" class="nav-item">Portfolio</div>
+            <div id="testamonials-link" class="nav-item">Testimonials</div>
+            <div id="contact-link" class="nav-item">Contact</div>
+        </nav>
+        
+        <div id="map-bg">
+            
+            <div id="map-container">
+                <div id="map"></div>
+
+                <script src="js/maps.js">
+                    initMap()
+                </script> 
+                <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARhoLCYUcUR49ToPsIUYua_8Q2tpCCsmU&callback=initMap">
+                </script>
+
+                <div id="map-footer">
+                    Based out of Ferrybridge, Brown's Decorating are proud to offer our excellent services all across North, East, South and West Yorkshire.
+                </div>
+            </div>
+        </div>
+        
+        <div class="marker-alt" id="about-marker"></div>
+        
+        <div class="container container-alt">
+            <div class="section-header"> About Us </div>
+            <div id="info-content">
+                 - Here at Browns Decorating we offer all aspects of interior and exterior decorating in both domestic and commercial settings. <br>
+                 - Almost all of the paints we use are from Dulux Trade centres, ensuring top notch quality. <br>
+                 - All interior decorating is done with low VOC paint which is better for your health and the environment. <br>
+                 - We are fully insured and are proud to offer top quality work at excellent pricing, no matter how big or small the job.    
+            </div>
+        </div>
+        
+        <div class="marker" id="portfolio-marker"></div>
+                
+        <div class="container">
+            <div class="section-header">Our Work</div>
+            <div id="portfolio-content">
+                <div class="portfolio-column">
+                    <img src="img/1.png">
+                    <img src="img/2.png">
+                    <img src="img/3.png">
+                    <img src="img/4.png">
+                    <img src="img/5.png">
+                    <img src="img/6.png">
+                    <img src="img/7.png">
+                    <img src="img/8.png">
+                    <img src="img/9.png">
+                    <img src="img/10.png">
+                    <img src="img/11.png">
+                </div>
+                <div class="portfolio-column">
+                    <img src="img/12.png">
+                    <img src="img/13.png">
+                    <img src="img/14.png">
+                    <img src="img/15.png">
+                    <img src="img/16.png">
+                    <img src="img/17.png">
+                    <img src="img/18.png">
+                    <img src="img/19.png">
+                    <img src="img/20.png">
+                    <img src="img/21.png">
+                </div>
+                <div class="portfolio-column">
+                    <img src="img/23.png">
+                    <img src="img/22.png">
+                    <img src="img/24.png">
+                    <img src="img/25.png">
+                    <img src="img/26.png">
+                    <img src="img/27.png">
+                    <img src="img/28.png">
+                    <img src="img/29.png">
+                    <img src="img/30.png">
+                    <img src="img/31.png">
+                    <img src="img/32.png">
+                    <img src="img/33.png">
+                </div>
+            </div>
+            <span id="portfolio-toggle" onclick="">show more</span>
+        </div>
+        
+        <div class="marker-alt" id="testamonials-marker"></div>
+                
+        <div class="container container-alt">
+            <div class="section-header"> Testimonials </div>
+            <div id="testamonials">Keith did our changing facilities at kellingley welfare f.c....was a really big job...they hadnt been  done for a few years...he did a fantastic job .very proffesional...still looks the biz now...thanks very much keith..</div>
+            <div id="testamonial-toggle-button-container">
+                <div class="testamonial-toggle-button" id="testamonial-prev">Prev</div>
+                <div class="testamonial-toggle-button" id="testamonial-next">Next</div>
+            </div>
+        </div>
+        
+        <div class="marker" id="contact-marker"></div>
+                
+        <div class="container">
+            <div class="section-header"> Contact Us </div>
+            <div class="contact-detail"> Please feel free to get in touch to make appointments using the form or details below it. We are open all week, 9am-5pm. </div>
+            <form id="contact-form" method="POST" enctype="multipart/form-data">
+                <div id="contact-form-cols">
+                    <div class="contact-form-col">
+                        <div>Your Name</div> <input class="contact-form-textbox" name="name" type="text" >
+                    </div>
+                    <div class="contact-form-col">
+                        <div>Your Email</div> <input class="contact-form-textbox" name="email" type="text" >
+                    </div>
+                    <div class="contact-form-col">
+                        <div>Phone Number</div> <input class="contact-form-textbox" name="email" type="text" >
+                    </div>
+                </div>
+                
+                
+                <div id="text-area-header">Your Message</div> 
+                
+                <textarea id="contact-form-message" name="message" rows="10"></textarea>
+                
+                <div id="submit-button-container">
+                    <input type="submit">
+                </div>
+            </form>
+            <div class="contact-detail"> E : queries@brownsdecorating.com </div>
+            <div class="contact-detail"> T : 01977 672382 </div>
+            <div class="contact-detail"> M : 07917 004361 </div>
+        </div>
+        
+        <footer class="container container-alt">
+            <img id="footer-logo" src="img/logo.png"> <br>
+            E - queries@brownsdecorating <br>
+            T - 01977 672382 M - 07917 004361
+        </footer>
+        
+    </body>
+    
+    <script>
+        function togglePortfolioHeight(){
+            h = document.getElementById("portfolio-content").clientHeight;
+            if(h==1000){
+                document.getElementById("portfolio-content").style.height = "auto";
+                document.getElementById("portfolio-toggle").innerHTML = "show less";
+            }else{
+                document.getElementById("portfolio-content").style.height = "1000px";
+                document.getElementById("portfolio-toggle").innerHTML = "show more";
+            }
+        }
+        document.getElementById("portfolio-toggle").addEventListener("click",togglePortfolioHeight);
+    
+        var testamonialIndex = 0
+        var testamonialArray = [
+            "Keith did our changing facilities at kellingley welfare f.c....was a really big job...they hadnt been  done for a few years...he did a fantastic job .very proffesional...still looks the biz now...thanks very much keith..",
+            "Just had full house painted. It looks amazing. Very friendly, trustworthy and reliable. The place is immaculate, no mess or cleaning up to do. All prep work done prior to painting. Work done to a very high standard. Would definitely recommend Browns and would use again. Thankyou Keith for an amazing result.",
+            "Fantastic job and would 110% recommend. Quick, reliable and did an amazing job on the entire house.",
+            "Superb!! Couldn't be more helpful. Price for quality of job excellent. Highly recommended."
+        ]
+        
+        function changeTestamonial(){            
+            var x = document.getElementById("testamonials");
+            if (testamonialIndex == 3){
+                x.innerHTML = testamonialArray[0];
+                testamonialIndex = 0;
+            } else{
+                x.innerHTML = testamonialArray[testamonialIndex + 1];
+                testamonialIndex++;
+            }
+        }
+        
+        
+        function reverseTestamonial(){            
+            var x = document.getElementById("testamonials");
+            if (testamonialIndex == 0){
+                x.innerHTML = testamonialArray[3];
+                testamonialIndex = 3;
+            } else{
+                x.innerHTML = testamonialArray[testamonialIndex - 1];
+                testamonialIndex--;
+            }
+        }
+        
+        
+        document.getElementById("about-link").addEventListener("click" , function(){
+            document.getElementById("about-marker").scrollIntoView();   
+        })
+        document.getElementById("portfolio-link").addEventListener("click" , function(){
+            document.getElementById("portfolio-marker").scrollIntoView();   
+        })
+        document.getElementById("testamonials-link").addEventListener("click" , function(){
+            document.getElementById("testamonials-marker").scrollIntoView();   
+        })
+        document.getElementById("contact-link").addEventListener("click" , function(){
+            document.getElementById("contact-marker").scrollIntoView();   
+        })
+        
+        document.getElementById("testamonial-next").addEventListener("click" , changeTestamonial)
+        document.getElementById("testamonial-prev").addEventListener("click" , reverseTestamonial)
+        
+    </script>
 </html>

@@ -1,0 +1,154 @@
+<html>
+    <head>
+        <title>Designer Web Page Prototype</title>
+        <link rel="stylesheet" type="text/css" href="css/theme.css">
+        <link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet"> 
+        <script src="scripts/main.js"></script>
+    </head>
+    <body>
+        
+        <header>
+           <a href="index.html"><img id="header_logo" src="images/logo.png" class="zoomImg"></a>
+        </header>
+
+        <div id="body_container">
+            <p>
+            <div class="tab">
+                <button onclick="openTab(event, 'About')" id="AboutOpen">About</button>
+                <button onclick="openTab(event, 'Services')">Services</button>
+                <button onclick="openTab(event, 'Contact')">Contact</button>
+                <button onclick="openTab(event, 'Testimonials')">Testimonials</button>
+            </div>
+            </p>
+        </div>
+
+        <div id="body_container" style="height: 100%;">
+            <div style="text-align: center">
+                <div id="About" class="tabcontent">
+                    <h1>About</h1>
+                    <div id="body">    
+                        <p>
+                            Here at Browns Painting & Decorating, we offer all aspects of domestic and commercial, interior and exterior Painting and 
+                            Decorating to suit your needs. We are proud to offer top quality work at realistic prices no matter how big or small the job is.
+                        </p>
+                        <p>
+                            We are fully insured; All paints used are waterbase (low voc) on interior decorating. Low VOC paints are not only better 
+                            for you and your family's health but also the environment. The vast majority of the paints that we use are from 
+                            trusted Dulux Trade centres, so we can auure all clients that they are of the highest quality possible.  
+                        </p>
+                        <p>
+                                We are proud to cover North, East, South and West Yorkshire, as well as surrounding areas.
+                            </p>
+                    </div>
+
+                    <div class="body">
+                        
+                        <div id="map"></div>
+                        <script src="scripts/main.js">
+                            initMap()
+                        </script>
+                        <script async defer
+                            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARhoLCYUcUR49ToPsIUYua_8Q2tpCCsmU&callback=initMap">
+                        </script>
+                    </div>
+
+                </div>
+                  
+                <div id="Services" class="tabcontent">
+                    <h1 class="zoom">Services</h1>
+                    <div id="body">
+                        Browns Painting & Decorating offer many services for both domestic and commercial clients. We specialise in providing
+                        great quality painting and decorating services to meet all of your needs. Please feel free to contact us in regards
+                        to our work with any question you may have. Below is a collection of our work as we feel it speaks for itself!
+                    </div>
+
+                    <div class="flex_squares">
+                        <div id="wrapperLeft">
+                            <img src="images/externalA.png" class="hover" width="80%"/>
+                            <p class="text" style="line-height: 100%">
+                                We offer top quality exterior paint and decoration work! We have done jobs for countless clients, 
+                                all of which have been satisfied with our work.
+                            </p>
+                        </div>
+                        <div id="wrapperRight">
+                            <img src="images/internalA.png" width="80%">
+                            <p class="text" style="line-height: 100%">
+                                We offer top quality interior paint and decoration work! We have done jobs for countless clients, 
+                                all of which have been satisfied with our work.
+                            </p>
+                        </div>
+                    </div>
+
+
+                </div>
+                  
+                <div id="Contact" class="tabcontent">
+                    <h1>Contact</h1>
+                    <div id="body">
+                        
+                        <p>
+                            Calling us directly and Emails are the best ways to get in touch with us, we do have a facebook 
+                            page <a href="https://www.facebook.com/Browns-Decorating-433985203431894/">Here</a> which you 
+                            can use to get in touch as well!
+                        </p>
+                        <p class="zoom">
+                            T- 01977 672382
+                        </p>
+                        <p class="zoom">
+                            M- 07917 004361
+                        </p>
+                        <p class="zoom">
+                            <a href="mailto:brownsdecorating@btinternet.com">E- brownsdecorating@btinternet.com</a>
+                        </p>
+                        <p> 
+                            Please feel free to get in touch to make appointments, we're open all week normal business
+                            hours!
+                        </p>
+                        
+                    </div>
+                    <div id="email_form" style="font-family: monospace">
+                            <form action="" method="POST" enctype="multipart/form-data">
+                                <input type="hidden" name="action" value="submit">
+                                Your name:&nbsp;
+                                <input name="name" type="text" value="" size="30"/><br>
+                                Your email:
+                                <input name="email" type="text" value="" size="30"/><br>
+                                <br></br>
+                                Your message:<br>
+                                <textarea name="message" rows="7" cols="30" style="resize: none;"></textarea><br>
+                                <input type="submit" value="Send email"/>
+                            </form>
+                    </div>
+                </div>
+
+                <div id="Testimonials" class="tabcontent">
+                        <h1>Testimonials</h1>
+                        
+                        <div id="body">
+                            <p>
+                                "Just had full house painted. It looks amazing. Very friendly, trustworthy and reliable. The place is immaculate, 
+                                no mess or cleaning up to do. All prep work done prior to painting. Work done to a very high standard. Would 
+                                definitely recommend Browns and would use again. Thankyou Keith for an amazing result."
+                            </p>
+                            <p>
+                                "Fantastic job and would 110% recommend. Quick, reliable and did an amazing job on the entire house."
+                            </p>
+                            <p>
+                                "Superb!! Couldn't be more helpful. Price for quality of job excellent. Highly recommended."
+                            </p>
+                        </div>
+                         
+                    </div>
+            </div>
+
+        </div>
+
+        <footer style="line-height: 1px;">
+            <p class="zoom">E- <a href="mailto:brownsdecorating@btinternet.com">brownsdecorating@btinternet.com</a></p>
+            <p class="zoom">M- 07917 004361  T- 01977 672382</p>
+        </footer>
+
+    </body>
+
+    
+</html>
