@@ -9,6 +9,7 @@ body{
 }
 
 a{
+    display: inline-block;
     all: unset;
     cursor: pointer;
     text-decoration: underline;
@@ -25,6 +26,8 @@ header{
     justify-content: center;
     background: #f0f0f0;
     width: 100%;
+    background: linear-gradient(rgba(255,255,255,0.98),rgba(255,255,255,0.98)),  url(../svg/boxes.svg);
+    background-repeat: repeat;
 }
 
 #logo{
@@ -42,6 +45,7 @@ nav{
     justify-content: center;
     z-index: 100;
     position: sticky;
+    -webkit-position: sticky;
     top: 0px;
     background: #fff; 
     box-shadow: 0px 0px 2px 2px rgba(190,190,190,0.5);
@@ -58,34 +62,28 @@ nav{
 
 
 #map-bg{
-    padding-top: 75px;
-    padding-bottom: 75px;
+    padding-top: 125px;
+    padding-bottom: 125px;
     width: 100%;
-    background: url(../img/bg1.jpg);
+    background: url(../img/bg.jpg);
     background-size: cover;
     background-position: center;
 }
 
 #map-container{
-    width: 75%;
-    margin-left: auto;
+    width: 80%;
     margin-right: auto;
     box-shadow: 0px 0px 3px 3px rgba(190,190,190,0.5);
+    background: rgba(255,255,255,0.9);
 }
 
-#map{
-    width: 100%;
-    height: 250px;
-    position: relative;
-}
 
 #map-footer{
-    background: white;
-    font-size: 21px;
-    text-align: center;
-    padding: 18px ;
-    background: white;
-    font-weight: 200;
+    font-size: 24px;
+    text-align: left;
+    padding: 24px;
+    font-weight: 400;
+    font-family: 'Oswald';
 }
 
 
@@ -112,8 +110,30 @@ nav{
 }
 
 #info-content{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
     font-size: 20px;
     font-weight: 200;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#info-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 50px;
+    margin-left: 50px;
+    border-left: 3px solid #ccc;
+    text-align: left;
+}
+
+#info-facebook{
+    box-shadow: 0px 0px 3px 3px rgba(190,190,190, 0.5);
 }
 
 #portfolio-content{
@@ -134,7 +154,7 @@ nav{
 
 .portfolio-column > img {
     width: 100%;
-    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .portfolio-column > img:nth-child(1) {
@@ -247,6 +267,7 @@ nav{
     font-size: 18px;
     font-weight: 400;
     border: none;
+    cursor: pointer;
     
 }
 
@@ -284,7 +305,7 @@ footer{
     }
 }
 
-@media only screen and (max-width: 380px) {
+@media only screen and (max-width: 500px) {
     #portfolio-content{
         flex-direction: column;
         align-content: flex-start;
@@ -309,3 +330,45 @@ footer{
     }
 }
 
+@media only screen and (max-width: 554px) {
+    #map-bg{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+
+
+@media only screen and (max-width: 300px) {
+    #map-container{
+        margin-left: auto;
+    }
+}
+
+@media only screen and (max-width: 866px) {
+
+    #info-content{
+        width: 100%;
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 0;
+    }
+
+    #info-text{
+        width: 90%;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        border: none;
+    }
+
+    #info-facebook{
+        box-shadow: none;
+        max-width: 100%;
+        overflow-x: scroll;
+        padding-top: 25px;
+        padding-bottom: 15px;
+    }
+    
+    #info-text-container{
+    }
+}
