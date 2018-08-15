@@ -19,37 +19,53 @@
 }
 
 #sub-bg{
+  /* 
+  width: 100%;
+  
+  background-size: cover;
+  background-position: relative; */
   padding-top: 125px;
   padding-bottom: 125px;
-  width: 100%;
   background: url(../img/ParallaxImg2.jpg);
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
-  background-position: relative;
+
 }
 #sub-container{
   width: 60%;
   margin-right: auto;
-  box-shadow: 0px 0px 3px 3px rgba(190,190,190,0.5);
-  background: rgba(255,255,255,0.9);
+  box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.9);
 }
 #sub-container-intro{
   width: 40%;
   margin-right: auto;
-  box-shadow: 0px 0px 3px 3px rgba(190,190,190,0.5);
-  background: rgba(255,255,255,0.9);
+  box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.9);
 }
 #sub-container-2{
   width: 60%;
   margin-left: auto;
-  box-shadow: 0px 0px 3px 3px rgba(190,190,190,0.5);
-  background: rgba(255,255,255,0.9);
+  box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.9);
 }
 #sub-container-middle{
-  width: 40%;
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
-  box-shadow: 0px 0px 3px 3px rgba(190,190,190,0.5);
-  background: rgba(255,255,255,0.9);
+  margin-top: -75px;
+  box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.9);
+}
+#sub-container-middle-index{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.9);
 }
 #sub-footer-left{
   font-size: 24px;
@@ -65,6 +81,14 @@
   font-weight: 400;
   font-family: 'Oswald';
 }
+#sub-footer-middle{
+  font-size: 24px;
+  text-align: center;
+  padding: 24px;
+  font-weight: 400;
+  font-family: "Oswald";
+  /* color: azure; */
+}
 
 
 .bgimg-1, .bgimg-2, .bgimg-3 {
@@ -76,9 +100,9 @@
 
 }
 .bgimg-1 {
-  margin-top: 65px;
+
   background-image: url("../img/ParallaxImg1.jpg");
-  min-height: 95%;
+  min-height: 100%;
 }
 
 .bgimg-2 {
@@ -101,7 +125,7 @@
 }
 
 .caption span.border {
-  background-color: #000;
+  background-color: rgba(0, 0, 0, 0);
   color: #fff;
   padding: 18px;
   font-size: 25px;
@@ -112,7 +136,7 @@ h3 {
   letter-spacing: 5px;
   text-transform: uppercase;
   font: 20px "Lato", sans-serif;
-  color: #111;
+  color: azure;
 }
 
 /* Turn off turned off turning off parallax scrolling for tablets and phones */
@@ -144,8 +168,8 @@ h3 {
   }
 
   .placeStyle{
-    color: #777;
-    background-color:white;
+    color: azure;
+    background-color:rgba(0, 0, 0, 1);
     text-align:center;
     padding:50px 80px;
     text-align: justify;
